@@ -1,0 +1,6 @@
+{
+  "name": "Cafe L'Ambre Workspace",
+  "description": "A premium, modern, high-converting digital system for Café L'Ambre, featuring a luxury desktop website, an Android mobile app simulator with integrated mock Razorpay checkout, real-time live order trackers, a business owner administration panel, and an AI Barista recommendations assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

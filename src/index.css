@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "Space Grotesk", monospace;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-30px) scale(1.08); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0) scale(1.08); }
+  50% { transform: translateY(30px) scale(0.92); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.15; filter: blur(120px); }
+  50% { opacity: 0.35; filter: blur(140px); }
+}
+
+.animate-float-slow {
+  animation: float-slow 18s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 24s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 10s ease-in-out infinite;
+}
+
+/* Custom noise/grid texture */
+.grid-bg-overlay {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(212, 175, 55, 0.04) 1px, transparent 0),
+    linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+  background-size: 24px 24px, 120px 120px, 120px 120px;
+}
+
